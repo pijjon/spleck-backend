@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                       // Modern JS features
+    "module": "ESNext",                       // For `type: module` in package.json
+    "rootDir": "src",                         // Source TypeScript files
+    "outDir": "dist",                         // Output JS files
+    "moduleResolution": "node",               // Resolve node_modules correctly
+    "esModuleInterop": true,                  // Allow default imports from CJS modules
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,                           // Enable all strict type-checking
+    "skipLibCheck": true,                     // Speeds up builds by skipping type checks on deps
+    "resolveJsonModule": true,                // If importing .json files
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src"],                         // What to compile
+  "exclude": ["node_modules", "dist"]         // What to skip
+}
